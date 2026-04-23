@@ -1,0 +1,81 @@
+.home-page {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-section {
+  margin-bottom: 60px;
+  animation: fadeInUp 0.8s ease;
+}
+
+.brand-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #94cce0, #f6bdbc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.glow-text {
+  font-size: 1.8rem;
+  color: #94cce0;
+  margin: 10px 0;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  color: #555;
+  margin: 20px 0 30px;
+}
+
+.features-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature-card {
+  background: #f6bdbc;
+  padding: 30px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card i {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #94cce0, 0 0 20px #94cce0;
+  }
+  to {
+    text-shadow: 0 0 20px #94cce0, 0 0 40px #94cce0;
+  }
+}

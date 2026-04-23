@@ -1,0 +1,53 @@
+.admin-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+}
+
+.admin-section {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.sub-list {
+  display: grid;
+  gap: 10px;
+}
+
+.sub-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.product-form {
+  display: grid;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.product-form input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #e0e0e0;
+  border-radius: 20px;
+}
+
+.product-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.product-actions select {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid #e0e0e0;
+}

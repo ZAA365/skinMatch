@@ -1,0 +1,62 @@
+.plan-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.routine-section {
+  background: #f6bdbc;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px 0;
+}
+
+.routine-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.step-number {
+  background: #94cce0;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.product-name {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.product-link {
+  color: #94cce0;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.locked-content {
+  text-align: center;
+  padding: 40px;
+  background: #f9f9f9;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.total-section {
+  text-align: right;
+  padding: 20px;
+  background: #94cce0;
+  color: white;
+  border-radius: 15px;
+  margin-top: 20px;
+}

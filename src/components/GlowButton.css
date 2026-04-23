@@ -1,0 +1,30 @@
+.glow-button {
+  background: #94cce0;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 14px 32px;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 0 18px #94cce0, 0 4px 12px rgba(148, 204, 224, 0.5);
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+}
+
+.glow-button:hover:not(.disabled) {
+  background: #7bbbd2;
+  box-shadow: 0 0 28px #94cce0, 0 8px 18px rgba(148, 204, 224, 0.7);
+  transform: translateY(-2px);
+}
+
+.glow-button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+  background: #cccccc;
+}
