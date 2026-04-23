@@ -1,12 +1,14 @@
 {
   "name": "skinmatch",
   "version": "1.0.0",
+  "description": "Buss200ProjectF37Team2",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^7.2.0",
+    "express": "^4.18.2",
+    "jison": "^0.4.18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.30.3",
+    "react-router-dom": "^7.14.2",
     "react-scripts": "5.0.1"
   },
   "scripts": {
@@ -14,6 +16,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
   },
   "browserslist": {
     "production": [
