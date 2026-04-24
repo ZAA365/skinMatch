@@ -9,7 +9,7 @@ function Navbar({ currentUser, onLogout }) {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="logo">
-          <i className="fas fa-seedling"></i>
+          <img src={logo} alt="SkinMatch" className="logo-image" />
           <span>SkinMatch</span>
         </Link>
         

@@ -8,8 +8,8 @@ function Plan({ currentUser, userSelections }) {
   const navigate = useNavigate();
   const routineKey = `${userSelections.skinType}_${userSelections.skinConcern}`;
   const routine = DB.routines[routineKey] || {
-    morning: [{ product: 'Custom Cleanser', link: '#' }],
-    night: [{ product: 'Night Cream', link: '#' }],
+    morning: [{ product: 'Custom Cleanser', link: '#', image: 'https://placehold.co/150x150/ccc/white?text=Product' }],
+    night: [{ product: 'Night Cream', link: '#', image: 'https://placehold.co/150x150/ccc/white?text=Product' }],
     total: 'N/A'
   };
 
@@ -20,6 +20,13 @@ function Plan({ currentUser, userSelections }) {
         {routine.morning.map((item, idx) => (
           <div key={idx} className="routine-item">
             <span className="step-number">{idx + 1}</span>
+            {/* PRODUCT IMAGE */}
+            <img 
+              src={item.image} 
+              alt={item.product} 
+              className="product-image"
+              onError={(e) => { e.target.src = 'https://placehold.co/150x150/f6bdbc/white?text=Product'; }}
+            />
             <div className="product-info">
               <p className="product-name">{item.product}</p>
               {item.link && item.link !== '#' && (
@@ -39,6 +46,13 @@ function Plan({ currentUser, userSelections }) {
             {routine.night.map((item, idx) => (
               <div key={idx} className="routine-item">
                 <span className="step-number">{idx + 1}</span>
+                {/* PRODUCT IMAGE */}
+                <img 
+                  src={item.image} 
+                  alt={item.product} 
+                  className="product-image"
+                  onError={(e) => { e.target.src = 'https://placehold.co/150x150/94cce0/white?text=Product'; }}
+                />
                 <div className="product-info">
                   <p className="product-name">{item.product}</p>
                   {item.link && item.link !== '#' && (
