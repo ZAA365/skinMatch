@@ -59,3 +59,18 @@
   text-decoration: none;
   font-weight: 600;
 }
+
+/* Test credentials box */
+.test-credentials {
+  background: #f6bdbc;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 20px;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.test-credentials p {
+  margin: 3px 0;
+  color: #1a1a2e;
+}

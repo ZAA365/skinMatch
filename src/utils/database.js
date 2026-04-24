@@ -35,10 +35,10 @@ export const DB = {
       isAdmin: false
     },
     {
-      firstName: 'subscribed',
+      firstName: 'Subscribed',
       lastName: 'User',
       email: 'user1@skinmatch.com',
-      password: 'subscribed@123',
+      password: 'Subscribed@123',
       subscribed: true,
       isAdmin: false
     }
@@ -50,23 +50,23 @@ export const DB = {
       email: 'admin@skinmatch.com',
       plan: 'yearly',
       amount: '200 SAR',
-      date: '2024-01-15',
+      date: '2026-01-15',
       status: 'active'
     },
     {
       id: 2,
-      email: 'user1@example.com',
+      email: 'user1@skinmatch.com',
       plan: 'monthly',
       amount: '50 SAR',
-      date: '2024-03-20',
+      date: '2026-03-20',
       status: 'active'
     },
     {
       id: 3,
-      email: 'user2@example.com',
+      email: 'user2@skinmatch.com',
       plan: 'one_time',
       amount: '20 SAR',
-      date: '2024-02-10',
+      date: '2026-02-10',
       status: 'expired'
     }
   ],
@@ -143,90 +143,187 @@ export const DB = {
       link: 'https://www.sephora.me/sa-en/p/the-indigo-overnight-repair/P10058848',
       image: indigoRepair,
       step: 'night cream'
+    },
+    {
+      id: 9,
+      name: '107 Beauty Chaga Jelly Low pH Cleanser',
+      skinType: 'oily',
+      concern: 'acne',
+      link: 'https://iherb.co/1R6u2VRp?rcode=DWD8226&utm_medium=appshare',
+      image: chagaCleanser,
+      step: 'cleanser'
+    },
+    {
+      id: 10,
+      name: 'Anua BHA 2% Gentle Exfoliating Toner',
+      skinType: 'oily',
+      concern: 'acne',
+      link: 'https://iherb.co/TJDj4MQ?rcode=DWD8226&utm_medium=appshare',
+      image: anuaToner,
+      step: 'toner'
+    },
+    {
+      id: 11,
+      name: 'Jumiso Waterfull Hyaluronic Acid Serum',
+      skinType: 'oily',
+      concern: 'acne',
+      link: 'https://iherb.co/CEvhmBY?rcode=DWD8226&utm_medium=appshare',
+      image: jumisoSerum,
+      step: 'serum'
+    },
+    {
+      id: 12,
+      name: 'Purito Wonder Releaf Centella Cream',
+      skinType: 'oily',
+      concern: 'acne',
+      link: 'https://iherb.co/pXdUpmmc?rcode=DWD8226&utm_medium=appshare',
+      image: puritoCream,
+      step: 'cream'
+    },
+    {
+      id: 13,
+      name: 'SKIN1004 Hyalu-Cica Water-Fit Sun Serum',
+      skinType: 'oily',
+      concern: 'acne',
+      link: 'https://iherb.co/qqsHjzVt?rcode=DWD8226&utm_medium=appshare',
+      image: skin1004Sunscreen,
+      step: 'sunscreen'
+    },
+    {
+      id: 14,
+      name: 'Mixsoon Bean Cleansing Oil',
+      skinType: 'oily',
+      concern: 'acne',
+      link: 'https://iherb.co/CE1UPy9o?rcode=DWD8226&utm_medium=appshare',
+      image: mixsoonOil,
+      step: 'oil cleanser'
+    },
+    {
+      id: 15,
+      name: 'Celimax Noni Toner',
+      skinType: 'oily',
+      concern: 'acne',
+      link: 'https://iherb.co/Rqy1BQc1?rcode=DWD8226&utm_medium=appshare',
+      image: celimaxToner,
+      step: 'toner'
+    },
+    {
+      id: 16,
+      name: 'Round Lab Pine Calming Cica Ampoule',
+      skinType: 'oily',
+      concern: 'acne',
+      link: 'https://iherb.co/bRDkiTQ?rcode=DWD8226&utm_medium=appshare',
+      image: roundLabAmpoule,
+      step: 'serum'
     }
   ],
   
   routines: {
     'sensitive_dark spots': {
       morning: [
-        { 
-          product: 'Pure Skin Face Cleanser', 
-          link: 'https://www.sephora.me/sa-en/p/pure-skin-face-cleanser/299769',
-          image: pureSkinCleanser
-        },
-        { 
-          product: 'Brightamin Brightening Serum', 
-          link: 'https://www.sephora.me/sa-en/p/brightamin-brightening-serum-ampoule/P1000207363',
-          image: brightaminSerum
-        },
-        { 
-          product: 'Ultra Facial Cream Sunscreen SPF 30', 
-          link: 'https://www.sephora.me/sa-en/p/ultra-facial-cream-sunscreen-spf-30/533938',
-          image: ultraFacialSunscreen
-        }
+        { product: 'Pure Skin Face Cleanser', link: 'https://www.sephora.me/sa-en/p/pure-skin-face-cleanser/299769', image: pureSkinCleanser },
+        { product: 'Brightamin Brightening Serum', link: 'https://www.sephora.me/sa-en/p/brightamin-brightening-serum-ampoule/P1000207363', image: brightaminSerum },
+        { product: 'Ultra Facial Cream Sunscreen SPF 30', link: 'https://www.sephora.me/sa-en/p/ultra-facial-cream-sunscreen-spf-30/533938', image: ultraFacialSunscreen }
       ],
       night: [
-        { 
-          product: 'Pure Skin Face Cleanser', 
-          link: 'https://www.sephora.me/sa-en/p/pure-skin-face-cleanser/299769',
-          image: pureSkinCleanser
-        },
-        { 
-          product: 'Hydrating Serum with Hyaluronic Acid', 
-          link: 'https://www.sephora.me/sa-en/p/hydrating-serum-with-hyaluronic-acid/651896',
-          image: hydratingSerum
-        },
-        { 
-          product: 'Protini Polypeptide Cream', 
-          link: 'https://www.sephora.me/sa-en/p/protini-polypeptide-cream/541986',
-          image: protiniCream
-        }
+        { product: 'Pure Skin Face Cleanser', link: 'https://www.sephora.me/sa-en/p/pure-skin-face-cleanser/299769', image: pureSkinCleanser },
+        { product: 'Hydrating Serum with Hyaluronic Acid', link: 'https://www.sephora.me/sa-en/p/hydrating-serum-with-hyaluronic-acid/651896', image: hydratingSerum },
+        { product: 'Protini Polypeptide Cream', link: 'https://www.sephora.me/sa-en/p/protini-polypeptide-cream/541986', image: protiniCream }
       ],
       total: '1089 SAR'
     },
     'dry_dryness': {
       morning: [
-        { 
-          product: 'Avocado Ceramide Moisture Barrier Cleanser', 
-          link: 'https://www.sephora.me/sa-en/p/avocado-ceramide-moisture-barrier-cleanser/P10052325',
-          image: avocadoCleanser
-        },
-        { 
-          product: 'Ultra Facial Cream Sunscreen SPF 30', 
-          link: 'https://www.sephora.me/sa-en/p/ultra-facial-cream-sunscreen-spf-30/P10011741',
-          image: ultraFacialSunscreenDry
-        }
+        { product: 'Avocado Ceramide Moisture Barrier Cleanser', link: 'https://www.sephora.me/sa-en/p/avocado-ceramide-moisture-barrier-cleanser/P10052325', image: avocadoCleanser },
+        { product: 'Ultra Facial Cream Sunscreen SPF 30', link: 'https://www.sephora.me/sa-en/p/ultra-facial-cream-sunscreen-spf-30/P10011741', image: ultraFacialSunscreenDry }
       ],
       night: [
-        { 
-          product: 'Avocado Ceramide Moisture Barrier Cleanser', 
-          link: 'https://www.sephora.me/sa-en/p/avocado-ceramide-moisture-barrier-cleanser/P10052325',
-          image: avocadoCleanser
-        },
-        { 
-          product: 'The Indigo Overnight Repair', 
-          link: 'https://www.sephora.me/sa-en/p/the-indigo-overnight-repair/P10058848',
-          image: indigoRepair
-        }
+        { product: 'Avocado Ceramide Moisture Barrier Cleanser', link: 'https://www.sephora.me/sa-en/p/avocado-ceramide-moisture-barrier-cleanser/P10052325', image: avocadoCleanser },
+        { product: 'The Indigo Overnight Repair', link: 'https://www.sephora.me/sa-en/p/the-indigo-overnight-repair/P10058848', image: indigoRepair }
       ],
       total: '788 SAR'
     },
     'oily_acne': {
       morning: [
-        { product: '107 Beauty Chaga Jelly Low pH Cleanser', link: '#', image: chagaCleanser },
-        { product: 'Anua BHA 2% Gentle Exfoliating Toner', link: '#', image: anuaToner },
-        { product: 'Jumiso Waterfull Hyaluronic Acid Serum', link: '#', image: jumisoSerum },
-        { product: 'Purito Wonder Releaf Centella Cream', link: '#', image: puritoCream },
-        { product: 'SKIN1004 Hyalu-Cica Water-Fit Sun Serum', link: '#', image: skin1004Sunscreen }
+        { product: '107 Beauty Chaga Jelly Low pH Cleanser', link: 'https://iherb.co/1R6u2VRp?rcode=DWD8226&utm_medium=appshare', image: chagaCleanser },
+        { product: 'Anua BHA 2% Gentle Exfoliating Toner', link: 'https://iherb.co/TJDj4MQ?rcode=DWD8226&utm_medium=appshare', image: anuaToner },
+        { product: 'Jumiso Waterfull Hyaluronic Acid Serum', link: 'https://iherb.co/CEvhmBY?rcode=DWD8226&utm_medium=appshare', image: jumisoSerum },
+        { product: 'Purito Wonder Releaf Centella Cream', link: 'https://iherb.co/pXdUpmmc?rcode=DWD8226&utm_medium=appshare', image: puritoCream },
+        { product: 'SKIN1004 Hyalu-Cica Water-Fit Sun Serum', link: 'https://iherb.co/qqsHjzVt?rcode=DWD8226&utm_medium=appshare', image: skin1004Sunscreen }
       ],
       night: [
-        { product: 'Mixsoon Bean Cleansing Oil', link: '#', image: mixsoonOil },
-        { product: '107 Beauty Chaga Jelly Low pH Cleanser', link: '#', image: chagaCleanser },
-        { product: 'Celimax Noni Toner', link: '#', image: celimaxToner },
-        { product: 'Round Lab Pine Calming Cica Ampoule', link: '#', image: roundLabAmpoule },
-        { product: 'Purito Wonder Releaf Centella Cream', link: '#', image: puritoCream }
+        { product: 'Mixsoon Bean Cleansing Oil', link: 'https://iherb.co/CE1UPy9o?rcode=DWD8226&utm_medium=appshare', image: mixsoonOil },
+        { product: '107 Beauty Chaga Jelly Low pH Cleanser', link: 'https://iherb.co/1R6u2VRp?rcode=DWD8226&utm_medium=appshare', image: chagaCleanser },
+        { product: 'Celimax Noni Toner', link: 'https://iherb.co/Rqy1BQc1?rcode=DWD8226&utm_medium=appshare', image: celimaxToner },
+        { product: 'Round Lab Pine Calming Cica Ampoule', link: 'https://iherb.co/bRDkiTQ?rcode=DWD8226&utm_medium=appshare', image: roundLabAmpoule },
+        { product: 'Purito Wonder Releaf Centella Cream', link: 'https://iherb.co/pXdUpmmc?rcode=DWD8226&utm_medium=appshare', image: puritoCream }
       ],
       total: '715 SAR'
+    },
+    'oily_dark spots': {
+      morning: [
+        { product: '107 Beauty Chaga Jelly Low pH Cleanser', link: 'https://iherb.co/1R6u2VRp?rcode=DWD8226&utm_medium=appshare', image: chagaCleanser },
+        { product: 'Brightamin Brightening Serum', link: 'https://www.sephora.me/sa-en/p/brightamin-brightening-serum-ampoule/P1000207363', image: brightaminSerum },
+        { product: 'SKIN1004 Hyalu-Cica Water-Fit Sun Serum', link: 'https://iherb.co/qqsHjzVt?rcode=DWD8226&utm_medium=appshare', image: skin1004Sunscreen }
+      ],
+      night: [
+        { product: 'Mixsoon Bean Cleansing Oil', link: 'https://iherb.co/CE1UPy9o?rcode=DWD8226&utm_medium=appshare', image: mixsoonOil },
+        { product: '107 Beauty Chaga Jelly Low pH Cleanser', link: 'https://iherb.co/1R6u2VRp?rcode=DWD8226&utm_medium=appshare', image: chagaCleanser },
+        { product: 'Protini Polypeptide Cream', link: 'https://www.sephora.me/sa-en/p/protini-polypeptide-cream/541986', image: protiniCream }
+      ],
+      total: '650 SAR'
+    },
+    'dry_acne': {
+      morning: [
+        { product: 'Avocado Ceramide Moisture Barrier Cleanser', link: 'https://www.sephora.me/sa-en/p/avocado-ceramide-moisture-barrier-cleanser/P10052325', image: avocadoCleanser },
+        { product: 'Anua BHA 2% Gentle Exfoliating Toner', link: 'https://iherb.co/TJDj4MQ?rcode=DWD8226&utm_medium=appshare', image: anuaToner },
+        { product: 'Ultra Facial Cream Sunscreen SPF 30', link: 'https://www.sephora.me/sa-en/p/ultra-facial-cream-sunscreen-spf-30/P10011741', image: ultraFacialSunscreenDry }
+      ],
+      night: [
+        { product: 'Avocado Ceramide Moisture Barrier Cleanser', link: 'https://www.sephora.me/sa-en/p/avocado-ceramide-moisture-barrier-cleanser/P10052325', image: avocadoCleanser },
+        { product: 'Round Lab Pine Calming Cica Ampoule', link: 'https://iherb.co/bRDkiTQ?rcode=DWD8226&utm_medium=appshare', image: roundLabAmpoule },
+        { product: 'The Indigo Overnight Repair', link: 'https://www.sephora.me/sa-en/p/the-indigo-overnight-repair/P10058848', image: indigoRepair }
+      ],
+      total: '720 SAR'
+    },
+    'sensitive_acne': {
+      morning: [
+        { product: 'Pure Skin Face Cleanser', link: 'https://www.sephora.me/sa-en/p/pure-skin-face-cleanser/299769', image: pureSkinCleanser },
+        { product: 'Anua BHA 2% Gentle Exfoliating Toner', link: 'https://iherb.co/TJDj4MQ?rcode=DWD8226&utm_medium=appshare', image: anuaToner },
+        { product: 'SKIN1004 Hyalu-Cica Water-Fit Sun Serum', link: 'https://iherb.co/qqsHjzVt?rcode=DWD8226&utm_medium=appshare', image: skin1004Sunscreen }
+      ],
+      night: [
+        { product: 'Pure Skin Face Cleanser', link: 'https://www.sephora.me/sa-en/p/pure-skin-face-cleanser/299769', image: pureSkinCleanser },
+        { product: 'Hydrating Serum with Hyaluronic Acid', link: 'https://www.sephora.me/sa-en/p/hydrating-serum-with-hyaluronic-acid/651896', image: hydratingSerum },
+        { product: 'Purito Wonder Releaf Centella Cream', link: 'https://iherb.co/pXdUpmmc?rcode=DWD8226&utm_medium=appshare', image: puritoCream }
+      ],
+      total: '750 SAR'
+    },
+    'sensitive_dryness': {
+      morning: [
+        { product: 'Pure Skin Face Cleanser', link: 'https://www.sephora.me/sa-en/p/pure-skin-face-cleanser/299769', image: pureSkinCleanser },
+        { product: 'Hydrating Serum with Hyaluronic Acid', link: 'https://www.sephora.me/sa-en/p/hydrating-serum-with-hyaluronic-acid/651896', image: hydratingSerum },
+        { product: 'Ultra Facial Cream Sunscreen SPF 30', link: 'https://www.sephora.me/sa-en/p/ultra-facial-cream-sunscreen-spf-30/533938', image: ultraFacialSunscreen }
+      ],
+      night: [
+        { product: 'Pure Skin Face Cleanser', link: 'https://www.sephora.me/sa-en/p/pure-skin-face-cleanser/299769', image: pureSkinCleanser },
+        { product: 'Hydrating Serum with Hyaluronic Acid', link: 'https://www.sephora.me/sa-en/p/hydrating-serum-with-hyaluronic-acid/651896', image: hydratingSerum },
+        { product: 'The Indigo Overnight Repair', link: 'https://www.sephora.me/sa-en/p/the-indigo-overnight-repair/P10058848', image: indigoRepair }
+      ],
+      total: '950 SAR'
+    },
+    'oily_dryness': {
+      morning: [
+        { product: '107 Beauty Chaga Jelly Low pH Cleanser', link: 'https://iherb.co/1R6u2VRp?rcode=DWD8226&utm_medium=appshare', image: chagaCleanser },
+        { product: 'Hydrating Serum with Hyaluronic Acid', link: 'https://www.sephora.me/sa-en/p/hydrating-serum-with-hyaluronic-acid/651896', image: hydratingSerum },
+        { product: 'SKIN1004 Hyalu-Cica Water-Fit Sun Serum', link: 'https://iherb.co/qqsHjzVt?rcode=DWD8226&utm_medium=appshare', image: skin1004Sunscreen }
+      ],
+      night: [
+        { product: 'Mixsoon Bean Cleansing Oil', link: 'https://iherb.co/CE1UPy9o?rcode=DWD8226&utm_medium=appshare', image: mixsoonOil },
+        { product: '107 Beauty Chaga Jelly Low pH Cleanser', link: 'https://iherb.co/1R6u2VRp?rcode=DWD8226&utm_medium=appshare', image: chagaCleanser },
+        { product: 'The Indigo Overnight Repair', link: 'https://www.sephora.me/sa-en/p/the-indigo-overnight-repair/P10058848', image: indigoRepair }
+      ],
+      total: '680 SAR'
     }
   }
 };

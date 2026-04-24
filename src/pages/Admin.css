@@ -1,53 +1,238 @@
 .admin-page {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 30px;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
 }
 
+.admin-page h2 {
+  color: #2c5f6e;
+  margin-bottom: 25px;
+}
+
+/* Tabs */
+.admin-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.admin-tab {
+  padding: 12px 24px;
+  border: 2px solid #e0e0e0;
+  border-radius: 30px;
+  background: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-tab:hover {
+  border-color: #94cce0;
+}
+
+.admin-tab.active {
+  background: #94cce0;
+  color: white;
+  border-color: #94cce0;
+}
+
+/* Stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  background: #f6bdbc;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.stat-card h4 {
+  color: #555;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a1a2e;
+}
+
+/* Tables */
+.table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  background: #94cce0;
+  color: white;
+  padding: 14px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.admin-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-table tr:hover {
+  background: #f9f9f9;
+}
+
+/* Badges */
+.badge {
+  background: #94cce0;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-badge.active {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-badge.expired {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Admin Section */
 .admin-section {
   background: white;
   border-radius: 20px;
   padding: 25px;
-  margin-bottom: 30px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  margin-bottom: 25px;
 }
 
-.sub-list {
+.admin-section h3 {
+  color: #2c5f6e;
+  margin-bottom: 20px;
+}
+
+/* Forms */
+.product-form, .product-actions {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 15px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.form-row input, .edit-form input, select {
+  padding: 10px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.form-row input:focus, select:focus {
+  outline: none;
+  border-color: #94cce0;
+}
+
+.edit-form {
   display: grid;
   gap: 10px;
+  margin: 15px 0;
 }
 
-.sub-item {
+.action-buttons {
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  background: #f9f9f9;
-  border-radius: 10px;
+  gap: 10px;
+  margin-top: 15px;
 }
 
-.product-form {
+.delete-btn {
+  background: #e74c3c !important;
+  box-shadow: 0 0 15px rgba(231, 76, 60, 0.4) !important;
+}
+
+.delete-btn:hover {
+  background: #c0392b !important;
+}
+
+/* Link button */
+.link-btn {
+  color: #94cce0;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.link-btn:hover {
+  text-decoration: underline;
+}
+
+/* Routines Grid */
+.routines-grid {
   display: grid;
-  gap: 15px;
-  margin: 20px 0;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-.product-form input {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #e0e0e0;
-  border-radius: 20px;
+.routine-card {
+  background: #f6bdbc;
+  padding: 20px;
+  border-radius: 15px;
 }
 
-.product-actions {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  margin-top: 20px;
+.routine-card h4 {
+  color: #1a1a2e;
+  margin-bottom: 10px;
+  text-transform: capitalize;
 }
 
-.product-actions select {
-  flex: 1;
-  padding: 10px;
-  border-radius: 20px;
-  border: 2px solid #e0e0e0;
+.product-tag {
+  display: inline-block;
+  background: white;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  margin: 3px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .admin-tabs {
+    flex-direction: column;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
 }

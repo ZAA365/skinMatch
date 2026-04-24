@@ -32,7 +32,13 @@ function Login({ onLogin }) {
     }
 
     onLogin(user);
-    navigate('/plan');
+    
+    // REDIRECT: Admin goes to dashboard, others go to plan
+    if (user.isAdmin) {
+      navigate('/admin');
+    } else {
+      navigate('/plan');
+    }
   };
 
   return (
@@ -62,6 +68,15 @@ function Login({ onLogin }) {
         {error && <div className="error-message">{error}</div>}
         <GlowButton type="submit">Login</GlowButton>
       </form>
+      
+      {/* Quick test credentials */}
+      <div className="test-credentials">
+        <p><strong>Test Accounts:</strong></p>
+        <p>Admin: admin@skinmatch.com / Admin@123</p>
+        <p>Normal: normal@skinmatch.com / Normal@123</p>
+        <p>Subscribed: user1@skinmatch.com / Subscribed@123</p>
+      </div>
+      
       <p className="auth-link">
         Don't have an account? <Link to="/register">Register now</Link>
       </p>

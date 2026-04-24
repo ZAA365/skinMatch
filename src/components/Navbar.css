@@ -36,15 +36,18 @@
   transform: scale(1.05);
 }
 
-.logo i {
-  font-size: 1.6rem;
-  color: #fff9e6;
+.logo-image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
@@ -53,7 +56,7 @@
   border: none;
   color: white;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.95rem;
   cursor: pointer;
   text-decoration: none;
   padding: 8px 16px;
@@ -70,14 +73,39 @@
   transform: translateY(-2px);
 }
 
+/* ADMIN BUTTON - Special styling to stand out */
+.admin-nav-btn {
+  background: rgba(255, 215, 0, 0.3) !important;
+  border: 2px solid rgba(255, 215, 0, 0.6) !important;
+  animation: adminPulse 2s infinite;
+}
+
+.admin-nav-btn:hover {
+  background: rgba(255, 215, 0, 0.5) !important;
+  color: #1a1a2e !important;
+}
+
 .nav-user-menu {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .logout-btn {
   background: rgba(255, 255, 255, 0.15);
+}
+
+.logout-btn:hover {
+  background: rgba(255, 100, 100, 0.3) !important;
+}
+
+@keyframes adminPulse {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+  }
 }
 
 @media (max-width: 680px) {
@@ -89,12 +117,9 @@
   .nav-links {
     justify-content: center;
   }
-}
-
-.logo-image {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid white;
+  
+  .nav-user-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

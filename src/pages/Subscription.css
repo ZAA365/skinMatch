@@ -1,3 +1,84 @@
+.routine-page {
+  padding: 20px;
+}
+
+.upgrade-banner {
+  background: linear-gradient(135deg, #94cce0, #f6bdbc);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.upgrade-banner a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.routine-page h2 {
+  text-align: center;
+  color: #2c5f6e;
+  margin-bottom: 30px;
+}
+
+.steps-container {
+  display: grid;
+  gap: 25px;
+}
+
+.step-card {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.step-card h3 {
+  color: #94cce0;
+  margin-bottom: 15px;
+}
+
+.options-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.option-btn {
+  padding: 10px 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 25px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.option-btn:hover:not(.disabled) {
+  border-color: #94cce0;
+  transform: translateY(-2px);
+}
+
+.option-btn.selected {
+  background: #94cce0;
+  color: white;
+  border-color: #94cce0;
+}
+
+.option-btn.disabled {
+  background: #f5f5f5;
+  color: #bdbdbd;
+  cursor: not-allowed;
+  border-color: #e0e0e0;
+  position: relative;
+}
+
+.generate-section {
+  text-align: center;
+  margin-top: 40px;
+}
 .subscription-page {
   max-width: 800px;
   margin: 40px auto;

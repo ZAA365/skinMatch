@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import GlowButton from '../components/GlowButton';
+import logo from '../images/skinMatchLogo.jpeg';
 import './Home.css';
 
 function Home() {
@@ -9,6 +10,15 @@ function Home() {
   return (
     <div className="home-page">
       <div className="hero-section">
+        {/* LOGO IN CENTER */}
+        <div className="logo-container">
+          <img 
+            src={logo} 
+            alt="SkinMatch Logo" 
+            className="hero-logo"
+          />
+        </div>
+        
         <h1 className="brand-title">SkinMatch</h1>
         <p className="glow-text">where you glow again</p>
         <h2 className="subtitle">find your matched skin care products</h2>

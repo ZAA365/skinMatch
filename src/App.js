@@ -52,10 +52,9 @@ function App() {
       <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route 
-            path="/routine" 
-            element={<SkinRoutine userSelections={userSelections} setUserSelections={setUserSelections} />} 
-          />
+          <Route  path="/routine"
+            element={<SkinRoutine userSelections={userSelections} setUserSelections={setUserSelections} currentUser={currentUser} />} 
+            />
           <Route path="/login" element={<Login onLogin={handleLogin} />} />
           <Route path="/register" element={<Register onRegister={handleLogin} />} />
           <Route 
