@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Buss200ProjectF37Team2",
   "private": true,
-  "homepage": "https://zaa365.github.io/skinmatch",
+  "homepage": "https://zaa365.github.io/skinMatch",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

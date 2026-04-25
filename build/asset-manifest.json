@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/skinmatch/static/css/main.9fab84cd.css",
-    "main.js": "/skinmatch/static/js/main.82942577.js",
+    "main.js": "/skinmatch/static/js/main.69424493.js",
     "static/media/UltraFacialCreamSunscreenSPF30.jpeg": "/skinmatch/static/media/UltraFacialCreamSunscreenSPF30.11ea841aa93e54f7ab80.jpeg",
     "static/media/JumisoWaterfullHyaluronicAcidSerum.jpeg": "/skinmatch/static/media/JumisoWaterfullHyaluronicAcidSerum.2bd9277793ed3c4ecf0c.jpeg",
     "static/media/RoundLabPineCalmingCicaAmpoule.jpeg": "/skinmatch/static/media/RoundLabPineCalmingCicaAmpoule.a588c7a1700479ab5671.jpeg",
@@ -20,10 +20,10 @@
     "static/media/MixsoonBeanCleansingOil.jpeg": "/skinmatch/static/media/MixsoonBeanCleansingOil.8db45500aa95d87f95e9.jpeg",
     "index.html": "/skinmatch/index.html",
     "main.9fab84cd.css.map": "/skinmatch/static/css/main.9fab84cd.css.map",
-    "main.82942577.js.map": "/skinmatch/static/js/main.82942577.js.map"
+    "main.69424493.js.map": "/skinmatch/static/js/main.69424493.js.map"
   },
   "entrypoints": [
     "static/css/main.9fab84cd.css",
-    "static/js/main.82942577.js"
+    "static/js/main.69424493.js"
   ]
 }
