@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import GlowButton from '../components/GlowButton';
 import './SkinRoutine.css';
@@ -35,7 +35,6 @@ function SkinRoutine({ userSelections, setUserSelections, currentUser }) {
   const handleGenerate = () => {
     if (userSelections.skinType && userSelections.skinConcern && userSelections.steps && userSelections.budget) {
       // Check if the routine exists in database
-      const routineKey = `${userSelections.skinType.toLowerCase()}_${userSelections.skinConcern.toLowerCase()}`;
       navigate('/plan');
     } else {
       alert('Please complete all steps before generating your routine.');

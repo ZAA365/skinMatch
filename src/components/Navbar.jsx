@@ -4,7 +4,6 @@ import logo from '../images/skinMatchLogo.jpeg';
 import './Navbar.css';
 
 function Navbar({ currentUser, onLogout }) {
-  const navigate = useNavigate();
 
   return (
     <nav className="navbar">
