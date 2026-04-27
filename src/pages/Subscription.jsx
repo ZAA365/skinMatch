@@ -9,9 +9,9 @@ function Subscription({ currentUser, setCurrentUser }) {
   const [acceptedTerms, setAcceptedTerms] = useState(false);
 
   const plans = [
-    { id: 'one_time', name: '1 Plan', price: '20 SAR', value: 20 },
-    { id: 'monthly', name: 'Monthly', price: '50 SAR', value: 50 },
-    { id: 'yearly', name: 'Yearly', price: '200 SAR', value: 200 }
+    { id: 'one_time', name: '1 Plan', price: '19.95 SAR', value: 19.95 },
+    { id: 'monthly', name: 'Monthly', price: '45.95 SAR', value: 45.95 },
+    { id: 'yearly', name: 'Yearly', price: '270.95 SAR', value: 270.95 }
   ];
 
   const handleContinue = () => {
